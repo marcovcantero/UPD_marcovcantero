@@ -1,4 +1,4 @@
-// test
+// get keypair, creates transaction, signs transaction, sends transaction
 import { clusterApiUrl, Connection, Keypair, SystemProgram, Transaction } from "@solana/web3.js";
 import bs58 from "bs58";
 
@@ -26,7 +26,7 @@ import bs58 from "bs58";
       space: 0,
       programId: SystemProgram.programId,
     })]
-    
+
   const txHash = await CONNECTION.sendTransaction(tx, [MY_KEYPAIR, NEW_ACCOUNT_KEYPAIR]);
   console.log(txHash);
 })();
