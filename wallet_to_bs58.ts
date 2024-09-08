@@ -1,3 +1,5 @@
+// gets wallet keypair in different formats
+
 import bs58 from "bs58";
 
 (async () => {
